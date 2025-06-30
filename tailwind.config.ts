@@ -12,7 +12,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      dropShadow: {
+        blue: "0 0 20px #3B82F6",
+      },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar-hide")],
 } satisfies Config;

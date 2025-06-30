@@ -1,165 +1,79 @@
-import Link from "next/link";
+// app/page.tsx or pages/index.tsx
+import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-t">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div>
-            <h3 className="font-bold mb-4">Company</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link
-                  href="/about"
-                  className="text-gray-600 hover:text-[#0a2463]"
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/careers"
-                  className="text-gray-600 hover:text-[#0a2463]"
-                >
-                  Careers
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="https://ankursolutions.com/"
-                  className="text-gray-600 hover:text-[#0a2463]"
-                >
-                  Ankur Global
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="font-bold mb-4">Resources</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link
-                  href="/newsletter"
-                  className="text-gray-600 hover:text-[#0a2463]"
-                >
-                  Newsletter
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/subsidiaries"
-                  className="text-gray-600 hover:text-[#0a2463]"
-                >
-                  Subsidiaries
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="font-bold mb-4">Support</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link
-                  href="/privacy"
-                  className="text-gray-600 hover:text-[#0a2463]"
-                >
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/terms"
-                  className="text-gray-600 hover:text-[#0a2463]"
-                >
-                  Terms
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div className="flex flex-col justify-between">
-            <div className="flex space-x-4">
-              <Link
-                href="https://twitter.com"
-                className="text-gray-600 hover:text-[#0a2463]"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-5 h-5"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
-                  />
-                </svg>
-              </Link>
-              <Link
-                href="https://linkedin.com"
-                className="text-gray-600 hover:text-[#0a2463]"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-5 h-5"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
-                  />
-                </svg>
-              </Link>
-              <Link
-                href="https://facebook.com"
-                className="text-gray-600 hover:text-[#0a2463]"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-5 h-5"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
-                  />
-                </svg>
-              </Link>
-            </div>
-
-            <div>
-              <p className="text-sm text-gray-600">DNIL © 2023</p>
-              <div className="mt-4">
-                <Link href="/" className="text-2xl font-bold text-[#0a2463]">
-                  DNIL
-                </Link>
-              </div>
-            </div>
-          </div>
+    <main className="min-h-screen bg-black text-white flex flex-col items-center justify-between">
+      {/* Hero Section */}
+      <section className="flex flex-col items-center justify-center text-center px-4 py-20">
+        <div className="mb-8">
+          <Image
+            src="/framer-icon.png" // Replace with actual icon
+            alt="Framer Logo"
+            width={100}
+            height={100}
+            className="drop-shadow-[0_0_40px_#3B82F6] animate-pulse"
+          />
         </div>
+        <h1 className="text-4xl md:text-5xl font-semibold mb-4 leading-tight">
+          Let’s Build Together
+        </h1>
+        <p className="text-gray-400 max-w-xl text-lg mb-6">
+          Open to freelance, collaboration, or full-time roles. Let’s create
+          something impactful.
+        </p>
+        {/* <div className="flex gap-4">
+          <button className="bg-white text-black font-medium px-6 py-3 rounded-full hover:opacity-90 transition">
+            Start for free
+          </button>
+          <button className="bg-[#1f1f1f] text-white border border-gray-700 px-6 py-3 rounded-full hover:opacity-90 transition">
+            Start with AI
+          </button>
+        </div> */}
+      </section>
 
-        <div className="mt-8 pt-8 border-t">
-          <Link
-            href="/contact"
-            className="inline-block bg-[#0a2463] text-white py-2 px-4 rounded-md hover:bg-opacity-90 transition-all"
-          >
-            Let's Talk
-          </Link>
-        </div>
+      {/* Footer */}
+      <div
+        className="flex justify-center
+      items-center"
+      >
+        {" "}
+        <footer className="w-full px-8 py-16 bg-black text-sm grid grid-cols-2 md:grid-cols-6 gap-6 text-gray-400">
+          {/* <div>
+            <h4 className="text-white font-semibold mb-3">Projects</h4>
+            <ul className="space-y-1">
+              <li>Soundmind</li>
+              <li>Foam Laundry</li>
+              <li>Kiasup</li>
+              <li>Ridebuddy</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-white font-semibold mb-3">Compare</h4>
+            <ul className="space-y-1">
+              <li>Squarespace</li>
+              <li>Wordpress</li>
+              <li>Unbounce</li>
+              <li>Webflow</li>
+              <li>Figma</li>
+              <li>Wix</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-white font-semibold mb-3">Socials</h4>
+            <ul className="space-y-1">
+              <li>Instagram</li>
+              <li>X Twitter</li>
+              <li>YouTube</li>
+              <li>LinkedIn</li>
+              <li>Threads</li>
+              <li>TikTok</li>
+            </ul>
+          </div> */}
+        </footer>
       </div>
-    </footer>
+    </main>
   );
 }
