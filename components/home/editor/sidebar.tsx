@@ -23,6 +23,7 @@ export default function Sidebar({
           <div className="text-gray-400 mb-1">{category}</div>
           <ul className="space-y-1 text-gray-400">
             {Object.entries(skills)
+              // eslint-disable-next-line @typescript-eslint/no-unused-vars
               .filter(([_, skill]) => skill.category === category)
               .map(([name]) => (
                 <li

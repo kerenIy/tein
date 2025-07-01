@@ -33,7 +33,7 @@ export default function FindAPro() {
           <h2 className="text-3xl font-bold">Evolving as an Engineer</h2>
           <p className="text-left text-gray-300 mt-3 mb-3 lg:mb-0 max-w-2xl">
             Why the transition? To lead with empathy and build at scale — from
-            pixels to containers. Here are some resources I'm using.
+            pixels to containers. Here are some resources I{"'"}m using.
           </p>
         </div>
         <div className="mt-5 lg:mt-0 space-x-3">

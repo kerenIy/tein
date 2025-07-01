@@ -19,6 +19,7 @@ export async function POST(req: Request) {
 
     return NextResponse.json({ success: true, data });
   } catch (error) {
+    console.log(error);
     return NextResponse.json(
       { error: "Email failed to send" },
       { status: 500 }

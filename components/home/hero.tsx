@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Hero() {
   return (
     <section className="min-h-screen bg-black text-white overflow-hidden">
@@ -14,8 +12,8 @@ export default function Hero() {
           Build. Lead. Think.
         </h1>
         <p className="text-lg text-gray-300 mb-8">
-          I'm Keren Iyalla — a software engineer shaping scalable products from
-          frontend to backend.
+          I{"'"}m Keren Iyalla — a software engineer shaping scalable products
+          from frontend to backend.
         </p>
 
         {/* CTA Buttons */}
@@ -71,9 +69,9 @@ export default function Hero() {
                 creating products that are intuitive, accessible, and built to
                 last. I’ve led cross-functional teams, worked closely with
                 designers and stakeholders, and contributed to both the
-                technical and product direction of projects. I'm also expanding
-                my skills into backend and DevOps to become a more well-rounded
-                engineer.
+                technical and product direction of projects. I{"'"}m also
+                expanding my skills into backend and DevOps to become a more
+                well-rounded engineer.
               </p>
             </div>
           </div>
