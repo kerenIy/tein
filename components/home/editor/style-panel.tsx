@@ -1,6 +1,6 @@
 export default function StylePanel() {
   return (
-    <div className="w-64 bg-[#1a1a1a] border-l border-[#2b2b2b] p-4 text-sm text-gray-300">
+    <div className="hidden lg:inline w-64 bg-[#1a1a1a] border-l border-[#2b2b2b] p-4 text-sm text-gray-300">
       <h3 className="mb-2 text-white font-semibold">Styles</h3>
       <div className="space-y-2">
         <div>

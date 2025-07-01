@@ -18,52 +18,64 @@ export default function Hero() {
           frontend to backend.
         </p>
 
+        {/* CTA Buttons */}
         <div className="flex space-x-4">
           <button className="px-6 py-2 rounded-full bg-white text-black font-medium">
-            View Resume
+            <a href="/resume.pdf" target="_blank">
+              View Resume
+            </a>
           </button>
           <button className="px-6 py-2 rounded-full bg-gray-900 border border-white/20 text-white font-medium">
-            GitHub Repo
+            <a href="https://github.com/kerenIy" target="_blank">
+              GitHub
+            </a>
           </button>
         </div>
 
+        {/* Showcase Box */}
         <div className="mt-16 w-full max-w-5xl rounded-lg border border-white/10 shadow-2xl overflow-hidden relative">
           {/* Background images */}
-          <div className="">
+          <div className="absolute inset-0 z-0 h-full">
             <img
               src="/patterns.jpg"
               alt=""
-              className="absolute top-0 inset-0 z-0"
+              className="absolute inset-0 h-full w-full object-cover rounded-lg"
             />
             <img
               src="/blurr.png"
               alt=""
-              className="absolute top-0 inset-0 z-0 opacity-[0.3] h-[520px] w-full rounded-[24px]"
+              className="absolute inset-0 h-full w-full object-cover opacity-30 rounded-lg"
             />
+            <div className="absolute inset-0 bg-black/40 rounded-lg" />
           </div>
 
-          {/* Emoji + Text */}
-          <div className="absolute z-10 top-6 left-6 flex items-center space-x-4">
-            <img
-              src="/myemoji.png"
-              alt="My emoji"
-              width={80}
-              height={80}
-              className="rounded-full"
-            />
-            <span className="text-white text-xl font-semibold">
-              Hello, I’m Keren!
-            </span>
-          </div>
+          <div className="relative z-10 flex flex-col md:flex-row md:items-start md:justify-between gap-6 p-8">
+            <div className="flex justify-center md:justify-start">
+              <img
+                src="/myemoji.png"
+                alt="My emoji"
+                width={200}
+                height={200}
+                className="rounded-full object-contain"
+              />
+            </div>
 
-          {/* Main Image or Content */}
-          <div className="relative z-[1] pt-32 pb-12 px-8">
-            {/* Your main image or additional content goes here */}
-            <img
-              src="/some-other-content.png"
-              alt="Main content"
-              className="mx-auto"
-            />
+            {/* Text */}
+            <div className="text-center lg:text-right md:flex-1 flex flex-col justify-center">
+              <span className="text-white text-2xl font-semibold block mb-4">
+                Hello, I’m Keren!
+              </span>
+              <p className="max-w-[500px]">
+                A software engineer focused on building scalable and
+                user-centered frontend web applications. I care deeply about
+                creating products that are intuitive, accessible, and built to
+                last. I’ve led cross-functional teams, worked closely with
+                designers and stakeholders, and contributed to both the
+                technical and product direction of projects. I'm also expanding
+                my skills into backend and DevOps to become a more well-rounded
+                engineer.
+              </p>
+            </div>
           </div>
         </div>
       </div>

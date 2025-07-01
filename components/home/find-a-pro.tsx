@@ -3,40 +3,45 @@ import Image from "next/image";
 
 const experts = [
   {
-    name: "Frontend System Design",
-    location: "United Kingdom",
-    image: "/projects/datalands.png",
+    name: "Frontend Reactive Architecture",
+    location: "Luca Mezzalira",
+    image: "/reactive.png",
   },
   {
-    name: "Introduction to Backend Systems",
-    location: "United States",
-    image: "/projects/robot.png",
+    name: "Fundamentals of Software Architecture",
+    location: "Mark Richards & Neal Ford",
+    image: "/architecture.png",
   },
+  // {
+  //   name: "Fundamentals of Backend Engineering",
+  //   location: "Hussein Nasser",
+  //   image: "/fobee.png",
+  // },
   {
     name: "NodeJs for Beginners",
-    location: "Germany",
-    image: "/projects/green-landing.png",
+    location: "Youtube",
+    image: "/nodejs.png",
   },
 ];
 
 export default function FindAPro() {
   return (
     <section className="bg-black text-white px-6 md:px-16 py-12">
-      <div className="flex justify-between items-center mb-6">
+      <div className="lg:flex justify-between items-center mb-6">
         <div className="">
           {" "}
           <h2 className="text-3xl font-bold">Evolving as an Engineer</h2>
-          <p className="text-left text-gray-300 mt-3 max-w-2xl">
+          <p className="text-left text-gray-300 mt-3 mb-3 lg:mb-0 max-w-2xl">
             Why the transition? To lead with empathy and build at scale — from
             pixels to containers. Here are some resources I'm using.
           </p>
         </div>
-        <div className="space-x-3">
+        <div className="mt-5 lg:mt-0 space-x-3">
           <button className="bg-white text-black px-4 py-2 rounded-full text-sm font-medium">
-            Active
+            View Resume
           </button>
           <button className="bg-[#111] text-white px-4 py-2 rounded-full text-sm font-medium border border-white/10">
-            Completed
+            Github
           </button>
         </div>
       </div>

@@ -1,24 +1,26 @@
-import Image from "next/image";
+interface CanvasProps {
+  skill: { description: string; projects: string[] };
+  skillName: string;
+}
 
-export default function Canvas() {
+export default function Canvas({ skill, skillName }: CanvasProps) {
   return (
-    <div className="flex-1 flex flex-col items-center justify-center p-8">
-      <div className="bg-[#101010] w-full h-[400px] flex items-center justify-center border border-gray-700 rounded-lg">
-        <div className="text-center">
-          <div className="bg-white text-black px-4 py-2 font-serif text-xl inline-block">
-            The ultimate <br /> camera app.
-          </div>
-          <button className="mt-4 bg-white text-black px-3 py-1 rounded text-sm">
-            Get app
-          </button>
-          <div className="mt-6">
-            <Image
-              src="/mock-phone.png"
-              alt="Phone mockup"
-              width={120}
-              height={200}
-              className="mx-auto"
-            />
+    <div className="hidden flex-1 lg:flex flex-col items-center justify-center p-8">
+      <div className="bg-[#101010] w-full h-[400px] flex items-center justify-center border border-gray-700 rounded-lg text-center">
+        <div>
+          <h2 className="text-white text-2xl font-bold mb-4">{skillName}</h2>
+          <p className="text-gray-300 mb-4 max-w-md">{skill.description}</p>
+          <div>
+            <h4 className="text-gray-400 mb-2 font-medium">Projects:</h4>
+            <ul className="text-sm text-gray-300 space-y-1">
+              {skill.projects.map((project, i) => (
+                <li key={i}>
+                  <a href="#" className="text-blue-400 hover:underline">
+                    {project}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
