@@ -1,5 +1,5 @@
 import SplitText from "../animated/split-text";
-import BlurText from "../animated/blur-text";
+// import BlurText from "../animated/blur-text";
 import FadeContent from "../animated/faded-content";
 
 import AnimatedContent from "../animated/animated-content";
