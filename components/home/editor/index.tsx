@@ -1,5 +1,6 @@
 // app/editor/page.tsx
 "use client";
+import ClickSpark from "@/components/animated/click-spark";
 import EditorLayout from "./editor-layout";
 
 export default function EditorPage() {
@@ -15,9 +16,17 @@ export default function EditorPage() {
           leader who bridges design, engineering, and strategy.
         </p>
       </section>
-      <div className="mx-8 lg:mx-0">
-        <EditorLayout />
-      </div>
+      <ClickSpark
+        sparkColor="#fff"
+        sparkSize={10}
+        sparkRadius={15}
+        sparkCount={8}
+        duration={400}
+      >
+        <div className="mx-8 lg:mx-0">
+          <EditorLayout />
+        </div>
+      </ClickSpark>
     </main>
   );
 }
