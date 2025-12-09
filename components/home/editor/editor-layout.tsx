@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Sidebar from "./sidebar";
 import Canvas from "./canvas";
-import StylePanel from "./style-panel";
 
 const skills: Record<
   string,
