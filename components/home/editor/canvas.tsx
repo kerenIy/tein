@@ -1,5 +1,5 @@
 interface CanvasProps {
-  skill: { description: string; projects: string[] };
+  skill: { description: string };
   skillName: string;
 }
 
@@ -11,8 +11,8 @@ export default function Canvas({ skill, skillName }: CanvasProps) {
           <h2 className="text-white text-2xl font-bold mb-4">{skillName}</h2>
           <p className="text-gray-300 mb-4 max-w-md">{skill.description}</p>
           <div>
-            <h4 className="text-gray-400 mb-2 font-medium">Projects:</h4>
-            <ul className="text-sm text-gray-300 space-y-1">
+            {/* <h4 className="text-gray-400 mb-2 font-medium">Projects:</h4> */}
+            {/* <ul className="text-sm text-gray-300 space-y-1">
               {skill.projects.map((project, i) => (
                 <li key={i}>
                   <a href="#" className="text-blue-400 hover:underline">
@@ -20,7 +20,7 @@ export default function Canvas({ skill, skillName }: CanvasProps) {
                   </a>
                 </li>
               ))}
-            </ul>
+            </ul> */}
           </div>
         </div>
       </div>

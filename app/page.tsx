@@ -8,8 +8,8 @@ export default function Home() {
     <main>
       <>
         <Hero />
-        <EditorPage />
         <Website />
+        <EditorPage />
         <FindAPro />
       </>
     </main>

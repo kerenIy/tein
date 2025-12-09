@@ -28,9 +28,9 @@ export default function Hero() {
           textAlign="center"
         />
 
-        <p className="text-lg text-gray-300 mb-8">
+        <p className="text-lg text-gray-300 mb-8 max-w-xl">
           I{"'"}m Keren Iyalla — a software engineer shaping scalable products
-          from frontend to backend.
+          and engineering the web with purpose, performance & people in mind.
         </p>
         {/* CTA Buttons */}
         <div className="flex justify-center items-center">
@@ -74,13 +74,13 @@ export default function Hero() {
             {/* Background images */}
             <div className="absolute inset-0 z-0 h-full">
               <img
-                src="/patterns.jpg"
-                alt=""
+                src="https://i.ibb.co/HDzQppsy/patterns.jpg"
+                alt="patterns"
                 className="absolute inset-0 h-full w-full object-cover rounded-lg"
               />
               <img
-                src="/blurr.png"
-                alt=""
+                src="https://i.ibb.co/d4BwzxXG/blurr.png"
+                alt="blurr"
                 className="absolute inset-0 h-full w-full object-cover opacity-30 rounded-lg"
               />
               <div className="absolute inset-0 bg-black/40 rounded-lg" />
@@ -89,8 +89,8 @@ export default function Hero() {
             <div className="relative z-10 flex flex-col md:flex-row md:items-start md:justify-between gap-6 p-8">
               <div className="flex justify-center md:justify-start">
                 <img
-                  src="/myemoji.png"
-                  alt="My emoji"
+                  src="https://i.ibb.co/5hmpsNQc/myemoji.png"
+                  alt="myemoji"
                   width={200}
                   height={200}
                   className="rounded-full object-contain"
